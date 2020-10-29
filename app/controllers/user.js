@@ -4,7 +4,7 @@ const Op = db.Sequelize.Op;
 const {signToken} = require('../utilities/jwt')
 const {Validation} = require('../utilities/validation')
 const { v4: uuidv4 } = require('uuid');
-const bcrypt = require('bcrypt');
+// const bcrypt = require('bcrypt');
 
 
 const saltRounds = 10;
@@ -29,8 +29,8 @@ exports.create = (req, res) => {
 
     let validateResult = validateRequestData(req.body)
     if (validateResult === ''){
-        const salt = bcrypt.genSaltSync(saltRounds);
-        const hash = bcrypt.hashSync(req.body.password, salt);
+        // const salt = bcrypt.genSaltSync(saltRounds);
+        const hash = 'fdsfsf';
 
         const user = {
             clec_uuid: uuidv4(),
