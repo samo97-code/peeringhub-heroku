@@ -23,11 +23,11 @@ paths:
       responses:
         200:
           description: Successfully Executed
-          content:
-            application/json:
-              schema:
+#          content:
+#            application/json:
+#              schema:
 #                type: object
-                $ref: '#/app/components/schemas/User.yaml'
+#                $ref: '#/app/components/schemas/User.yaml'
 #                properties:
 #                  username:
 #                    type: string
