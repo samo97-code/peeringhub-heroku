@@ -10,8 +10,9 @@ const SwaggerYaml = YAML.load('./swagger.yaml')
 
 const app = express();
 
+
 var corsOptions = {
-    origin: "http://localhost:8081"
+    origin: app.get('env') === 'development' ? "http://localhost:8081" : 'https://peeringhub-heroku.herokuapp.com/'
 };
 
 
