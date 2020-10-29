@@ -1,0 +1,46 @@
+properties:
+  username:
+    type: string
+  clec_uuid:
+    type: string
+  password:
+    type: string
+  email:
+    type: string
+    format: email
+  role:
+    type: string
+  first_name:
+    type: string
+  last_name:
+    type: string
+  phone_number:
+    type: string
+  contact_address:
+    type: string
+  contact_suite:
+    type: string
+  contact_city:
+    type: string
+  contact_country:
+    type: string
+  contact_postal_code:
+    type: number
+  company_name:
+    type: string
+  profile_address:
+    type: string
+  profile_suite:
+    type: string
+  profile_city:
+    type: string
+  profile_country:
+    type: string
+  profile_postal_code:
+    type: number
+  state_of_clec_certification:
+    type: string
+  upload_clec_certification:
+    type: string
+  ocn:
+    type: string
